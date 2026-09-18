@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <radialGradient id="badgeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85"/>
+    </radialGradient>
+    <linearGradient id="silverRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer circle -->
+  <circle cx="60" cy="60" r="56" fill="#0f172a" stroke="url(#silverRing)" stroke-width="3"/>
+  <circle cx="60" cy="60" r="50" fill="url(#badgeGlow)" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="2,2"/>
+  
+  <!-- Outer Lettering Ring -->
+  <circle cx="60" cy="60" r="48" fill="none"/>
+  <path id="textArcTop" d="M 22,60 A 38,38 0 0,1 98,60" fill="none"/>
+  <text font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="800" fill="#e2e8f0" letter-spacing="1.5">
+    <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">ST. JOHN AMBULANS</textPath>
+  </text>
+  
+  <path id="textArcBottom" d="M 98,60 A 38,38 0 0,1 22,60" fill="none"/>
+  <text font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="800" fill="#e2e8f0" letter-spacing="1.5">
+    <textPath href="#textArcBottom" startOffset="50%" text-anchor="middle">MALAYSIA</textPath>
+  </text>
+
+  <!-- Central Eight-pointed Maltese Cross -->
+  <g transform="translate(60,60)">
+    <circle cx="0" cy="0" r="24" fill="#090d16" stroke="#e2e8f0" stroke-width="1"/>
+    <!-- Maltese Cross points -->
+    <path d="M 0,0 L -7,-22 L 0,-18 L 7,-22 Z" fill="#ffffff"/>
+    <path d="M 0,0 L 22,-7 L 18,0 L 22,7 Z" fill="#ffffff"/>
+    <path d="M 0,0 L 7,22 L 0,18 L -7,22 Z" fill="#ffffff"/>
+    <path d="M 0,0 L -22,7 L -18,0 L -22,-7 Z" fill="#ffffff"/>
+    <!-- Small lions / embellishment dots -->
+    <circle cx="0" cy="0" r="4" fill="#38bdf8"/>
+    <circle cx="-11" cy="-11" r="1.5" fill="#f8fafc"/>
+    <circle cx="11" cy="-11" r="1.5" fill="#f8fafc"/>
+    <circle cx="11" cy="11" r="1.5" fill="#f8fafc"/>
+    <circle cx="-11" cy="11" r="1.5" fill="#f8fafc"/>
+  </g>
+</svg>
