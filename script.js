@@ -179,7 +179,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const cardUrlMap = {
     floorplan: 'https://fsktm-floorplan.netlify.app/',
-    gitflow: 'https://git-visualizer-wheat.vercel.app/',
     instagram: 'https://www.instagram.com/_yuzhiii',
     linkedin: 'https://www.linkedin.com/in/yu-zhi-looi-947228360',
     email: 'mailto:looi8943@gmail.com'
